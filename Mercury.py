@@ -294,7 +294,7 @@ def sub_link_t():
 def update():
 	clear()
 	quick()
-	os.system('git clone https://github.com/MetaChar/Mercury'+x+'\Update') #Just redownloads the repo
+	os.system('git clone https://github.com/MetaChar/Mercury'+x+'/Update') #Just redownloads the repo
 	sys.exit()
 def twitter():
 	print (Fore.CYAN + '	Exclude the @ sign! ')
@@ -611,7 +611,7 @@ def proxys():
 	options.add_argument('--hide-scrollbars')
 	options.add_argument('--disable-gpu')
 	browser = webdriver.Chrome(chrome_options=options) # change to 'Firefox' if running firefox
-	prox_txt = open(x+'\Resources\proxys.txt', 'w')
+	prox_txt = open(x+'/Resources/proxys.txt', 'w')
 	url = 'https://www.us-proxy.org'
 	browser.get(url)
 	try:
@@ -811,7 +811,7 @@ def brute_force(): #Declares Function
 			long()
 			mainmenu()
 def admin():
-	links = open(x+'\Resources\links.txt')
+	links = open(x+'/Resources/links.txt')
 	website = raw_input(Fore.CYAN + 'Enter a site to scan just www: ')
 	type_link = raw_input('Is the link https or http: ')
 	count4 = 1
@@ -834,7 +834,7 @@ def admin():
    			print(Fore.GREEN + website2)
    			count4 += 1
 def admin_t():
-	links = open(x+'\Resources\links.txt')
+	links = open(x+'/Resources/links.txt')
 	website = raw_input(Fore.CYAN + 'Enter a site to scan just www: ')
 	type_link = raw_input('Is the link https or http: ')
 	count4 = 1
