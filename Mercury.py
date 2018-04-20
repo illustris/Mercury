@@ -708,6 +708,8 @@ def sourcecode_t():
 def siteexists():
     try:
         site = raw_input(Fore.CYAN + 'Enter a website: ')
+	if 'http://' not in site and 'https://' not in site:
+		site = "http://"+site
         urllib2.urlopen(site)
     except urllib2.HTTPError, e:
         print (Fore.RED + site  + ' Does not exist')
@@ -731,6 +733,8 @@ def siteexists():
 def siteexists_t():
     try:
         site = raw_input(Fore.CYAN + 'Enter a website: ')
+	if 'http://' not in site and 'https://' not in site:
+		site = "http://"+site
         urllib2.urlopen(site)
     except urllib2.HTTPError, e:
         print (Fore.RED + site  + ' Does not exist')
