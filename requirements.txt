@@ -1,8 +1,5 @@
 colorama
 hashlib
-selenuim
-optparse
+selenium
 mechanize
-smtplib
 pygoogling
-platform
